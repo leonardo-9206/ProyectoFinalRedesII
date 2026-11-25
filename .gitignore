@@ -1,0 +1,21 @@
+# Imágenes de máquinas virtuales (NUNCA subir a GitHub)
+*.iso
+*.ova
+*.ovf
+*.vdi
+*.vmdk
+*.vhd
+*.vhdx
+*.vbox
+*.vbox-prev
+*.sav
+
+# Archivos temporales del sistema y editores
+Thumbs.db
+desktop.ini
+.DS_Store
+*.tmp
+*.bak
+~$*
+.vscode/
+.idea/

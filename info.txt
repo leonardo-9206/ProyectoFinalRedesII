@@ -1,0 +1,373 @@
+Proyecto Final — Administración e Integración de Servicios de Red
+Asignatura: Administración de Sistemas
+Unidad temática: Administración de servidores Windows y Linux
+Modalidad: Proyecto integrador en equipo
+Tipo de evaluación: Investigación documental, implementación técnica y presentación de resultados.
+
+1. Introducción
+El presente proyecto tiene como finalidad integrar los conocimientos adquiridos durante el curso mediante el diseño e implementación de una infraestructura de red que permita administrar usuarios, equipos y servicios utilizando diferentes sistemas operativos.
+
+Los estudiantes deberán diseñar e implementar una infraestructura compuesta por un servidor Windows Server que proporcione el servicio de Active Directory, un equipo cliente con Windows y un servidor Linux. Los tres sistemas deberán integrarse dentro de un mismo dominio, permitiendo la autenticación centralizada y el acceso a los servicios de red configurados.
+
+El proyecto deberá demostrar la capacidad del equipo para instalar, configurar, administrar y comprobar el funcionamiento de servicios en entornos Windows y Linux, así como documentar técnicamente cada procedimiento realizado.
+
+2. Objetivos
+2.1 Objetivo general
+Diseñar e implementar una infraestructura de red integrada mediante Active Directory, Windows y Linux, configurando servicios de autenticación centralizada y servicios de red que permitan demostrar la interoperabilidad entre diferentes sistemas operativos.
+
+2.2 Objetivos específicos
+Instalar y configurar un servidor Windows Server con el rol de Active Directory Domain Services.
+
+Crear y administrar un dominio, usuarios, grupos y unidades organizativas.
+
+Instalar e integrar un equipo cliente Windows al dominio.
+
+Implementar y configurar dos servicios o funcionalidades en el cliente Windows.
+
+Instalar y configurar un servidor Linux.
+
+Integrar el servidor Linux al dominio de Active Directory.
+
+Implementar tres servicios de red en Linux.
+
+Comprobar la autenticación centralizada y la comunicación entre los sistemas.
+
+Documentar los procedimientos, resultados y evidencias de la implementación.
+
+3. Arquitectura requerida
+El proyecto deberá contar obligatoriamente con los siguientes componentes:
+
+3.1 Servidor Windows Server — Active Directory
+Instalar y configurar un servidor Windows Server que desempeñe el papel de controlador de dominio.
+
+Configuraciones requeridas:
+
+Instalación del sistema operativo Windows Server.
+
+Configuración del nombre del servidor y dirección IP estática.
+
+Instalación del rol Active Directory Domain Services (AD DS).
+
+Promoción del servidor a controlador de dominio.
+
+Creación y configuración de un dominio.
+
+Creación de unidades organizativas (OU).
+
+Creación de usuarios y grupos.
+
+Configuración de DNS para la resolución del dominio.
+
+Verificación del funcionamiento de Active Directory.
+
+3.2 Cliente Windows
+Instalar un sistema operativo Windows cliente que se integre al dominio creado en Active Directory.
+
+Configuraciones requeridas:
+
+Instalación del sistema operativo Windows.
+
+Configuración del nombre del equipo.
+
+Configuración de red y DNS.
+
+Integración del equipo al dominio.
+
+Inicio de sesión utilizando una cuenta de dominio.
+
+Configuración e implementación de dos servicios o funcionalidades de administración de Windows.
+
+Los dos servicios deberán documentarse, justificando su utilidad, instalación, configuración y pruebas de funcionamiento.
+
+Nota: Se deberá utilizar una edición de Windows compatible con la integración a dominios tradicionales de Active Directory, como Windows Pro o Enterprise.
+
+3.3 Servidor Linux
+Instalar y configurar un servidor Linux que forme parte del dominio de Active Directory.
+
+Configuraciones requeridas:
+
+Instalación de una distribución Linux.
+
+Configuración del nombre del servidor y dirección IP estática.
+
+Configuración de DNS para localizar el controlador de dominio.
+
+Integración de Linux al dominio de Active Directory.
+
+Configuración de autenticación mediante usuarios del dominio.
+
+Verificación del inicio de sesión con una cuenta de Active Directory.
+
+Instalación, configuración y comprobación de tres servicios de red en Linux.
+
+Los tres servicios deberán ser funcionales, estar documentados y contar con pruebas que demuestren su operación.
+
+4. Requisitos de investigación y documentación
+Cada equipo deberá entregar un documento técnico académico que incluya los siguientes apartados:
+
+Portada institucional: nombre de la institución, programa académico, asignatura, título del proyecto, integrantes, docente y fecha de entrega.
+
+Resumen ejecutivo: síntesis del propósito, infraestructura implementada, servicios configurados y resultados obtenidos.
+
+Índice general: organización de los apartados y subapartados con su correspondiente numeración.
+
+Introducción: contextualización del proyecto y su importancia.
+
+Objetivos: objetivo general y objetivos específicos.
+
+Marco teórico: fundamentos de Active Directory, administración de Windows Server, sistemas Linux, protocolos de autenticación y servicios de red.
+
+Diseño de infraestructura: arquitectura de red, direccionamiento IP, nombre del dominio, servidores y equipos participantes.
+
+Desarrollo e implementación: procedimiento detallado de instalación y configuración de cada sistema.
+
+Configuración de servicios: explicación técnica de los dos servicios de Windows y los tres servicios de Linux.
+
+Pruebas y resultados: evidencias de conectividad, autenticación, integración al dominio y funcionamiento de los servicios.
+
+Conclusiones grupales: análisis de los resultados obtenidos y dificultades enfrentadas.
+
+Conclusiones individuales: reflexión técnica y académica de cada integrante.
+
+Referencias bibliográficas: fuentes de investigación utilizadas, documentadas en formato APA 7.
+
+Anexos: configuraciones adicionales, capturas complementarias, comandos y evidencias.
+
+4.1 Documentación de los procedimientos
+Cada procedimiento de instalación y configuración deberá incluir:
+
+Nombre y propósito del procedimiento.
+
+Requisitos previos.
+
+Pasos realizados en orden cronológico.
+
+Comandos utilizados y explicación de su propósito.
+
+Archivos de configuración modificados, cuando corresponda.
+
+Capturas de pantalla que evidencien el procedimiento.
+
+Pruebas realizadas para comprobar el funcionamiento.
+
+Problemas encontrados y soluciones aplicadas.
+
+No será suficiente incluir únicamente capturas de pantalla o comandos sin explicar su propósito y resultado.
+
+5. Evidencias obligatorias
+El equipo deberá demostrar, mediante capturas de pantalla y demostración práctica:
+
+Active Directory instalado y funcionando.
+
+Dominio creado y usuarios registrados.
+
+Unidades organizativas y grupos configurados.
+
+Cliente Windows integrado al dominio.
+
+Inicio de sesión del cliente Windows con un usuario de dominio.
+
+Dos servicios del cliente Windows funcionando.
+
+Servidor Linux integrado al dominio.
+
+Autenticación de usuarios de Active Directory desde Linux.
+
+Tres servicios Linux instalados y funcionando.
+
+Conectividad y comunicación entre los tres sistemas.
+
+6. Rúbrica de evaluación
+Criterio de evaluación	Porcentaje
+Instalación y configuración de Active Directory	10%
+Instalación, configuración y servicios de Windows cliente	20%
+Instalación, integración y servicios de Linux	30%
+Conclusiones grupales	10%
+Conclusiones individuales	20%
+Presentación y demostración técnica obligatoria	10%
+Total	100%
+6.1 Descripción de los criterios de evaluación
+Active Directory — 10%
+Instalación correcta del rol AD DS.
+
+Configuración del controlador de dominio.
+
+Creación del dominio, usuarios, grupos y unidades organizativas.
+
+Configuración de DNS.
+
+Comprobación del funcionamiento de la autenticación centralizada.
+
+Windows cliente — 20%
+Instalación y configuración del sistema operativo.
+
+Configuración de red y resolución DNS.
+
+Integración correcta al dominio.
+
+Implementación de dos servicios o funcionalidades.
+
+Pruebas y evidencias de funcionamiento.
+
+Linux — 30%
+Instalación y configuración del sistema operativo.
+
+Configuración de red y DNS.
+
+Integración con Active Directory.
+
+Configuración de autenticación centralizada.
+
+Instalación y configuración de tres servicios.
+
+Pruebas de funcionamiento y evidencias técnicas.
+
+Conclusiones grupales — 10%
+Análisis del cumplimiento de los objetivos.
+
+Evaluación de la infraestructura implementada.
+
+Identificación de problemas técnicos y soluciones aplicadas.
+
+Reflexión sobre la interoperabilidad entre Windows y Linux.
+
+Conclusiones individuales — 20%
+Cada integrante deberá elaborar una conclusión propia que incluya:
+
+Actividades realizadas y responsabilidades asumidas.
+
+Conocimientos técnicos adquiridos.
+
+Problemas enfrentados y soluciones implementadas.
+
+Importancia de la administración integrada de sistemas.
+
+Aprendizajes y competencias que puede aplicar en un entorno profesional.
+
+Las conclusiones deberán ser individuales, originales y reflejar la participación real de cada estudiante.
+
+Presentación y demostración técnica — 10%
+La presentación del proyecto será obligatoria para todos los equipos y deberá contemplar:
+
+Exposición de la arquitectura implementada y su funcionamiento.
+
+Explicación de la configuración de Active Directory.
+
+Demostración de la integración del cliente Windows al dominio.
+
+Demostración de la integración y autenticación del servidor Linux.
+
+Demostración práctica de los dos servicios de Windows y los tres servicios de Linux.
+
+Participación de los integrantes del equipo.
+
+Capacidad para responder preguntas técnicas sobre la implementación.
+
+La presentación no deberá limitarse a diapositivas: será indispensable demostrar el funcionamiento real de la infraestructura.
+
+7. Lineamientos para la elaboración del documento académico
+El entregable deberá presentarse como un informe técnico académico, con una estructura formal, redacción objetiva y sustento en fuentes bibliográficas confiables.
+
+7.1 Normas de presentación académica
+El documento deberá cumplir con los siguientes lineamientos:
+
+Elemento	Especificación
+Formato de entrega	PDF
+Tamaño de papel	Carta
+Tipografía	Arial o Times New Roman
+Texto principal	12 puntos
+Títulos principales	14 puntos, negritas
+Subtítulos	12 puntos, negritas
+Interlineado	1.5
+Alineación	Texto justificado
+Márgenes	2.5 cm en los cuatro lados
+Sangría	Primera línea de párrafo de 1.27 cm
+Numeración	Páginas numeradas
+Tablas y figuras	Numeradas, tituladas y con fuente cuando corresponda
+Referencias	Normas APA, séptima edición
+7.2 Criterios de calidad académica
+Mantener una redacción formal, técnica, clara y objetiva.
+
+Evitar expresiones coloquiales y opiniones sin fundamento.
+
+Citar las fuentes de investigación dentro del desarrollo del documento.
+
+Incluir referencias bibliográficas completas y verificables.
+
+Dar crédito a imágenes, diagramas, tablas y documentación externa.
+
+Explicar los procedimientos con suficiente detalle para permitir su reproducción.
+
+Identificar los comandos ejecutados y describir su propósito.
+
+Incluir capturas de pantalla como evidencia de los procedimientos realizados.
+
+Evitar copiar textualmente documentación técnica sin citarla.
+
+Diferenciar claramente la investigación teórica de los resultados obtenidos durante la implementación.
+
+8. Presentación y demostración del proyecto
+Cada equipo deberá realizar una exposición formal de su proyecto y demostrar el funcionamiento de la infraestructura.
+
+Durante la presentación se deberá evidenciar:
+
+La arquitectura general de la infraestructura.
+
+El funcionamiento del controlador de dominio.
+
+La autenticación del cliente Windows.
+
+La integración del servidor Linux con Active Directory.
+
+La operación de los dos servicios de Windows.
+
+La operación de los tres servicios de Linux.
+
+La comunicación entre los diferentes sistemas.
+
+Todos los integrantes deberán participar en la exposición y demostrar conocimiento de los componentes implementados.
+
+La ausencia de demostración práctica limitará la evaluación del apartado de presentación, independientemente de la calidad del documento entregado.
+
+9. Requisitos finales de entrega
+Cada equipo deberá entregar:
+
+Un informe técnico académico en formato PDF.
+
+El diagrama de arquitectura de red.
+
+Evidencias gráficas de instalación y configuración.
+
+Documentación de los cinco servicios implementados.
+
+Referencias bibliográficas en formato APA 7.
+
+Conclusiones grupales e individuales.
+
+Asimismo, deberá mantener disponible la infraestructura para realizar la demostración práctica durante la sesión asignada.
+
+10. Fuentes de investigación recomendadas
+Se recomienda utilizar documentación oficial y fuentes técnicas confiables para fundamentar la investigación y los procedimientos de instalación.
+
+Microsoft
+Microsoft Learn. Documentación de Windows Server y Active Directory Domain Services.
+
+Microsoft Learn. Administración de usuarios, grupos y unidades organizativas.
+
+Microsoft Learn. Configuración de DNS y unión de equipos Windows a un dominio.
+
+Linux
+Ubuntu Server Documentation. Instalación y administración de servicios.
+
+Red Hat Enterprise Linux Documentation. Integración de sistemas Linux con Active Directory.
+
+Documentación oficial de SSSD, realmd y Samba.
+
+Consideración: Las fuentes consultadas deberán citarse dentro del documento y registrarse en la sección de referencias bibliográficas conforme a APA 7. La inclusión de una URL sin citarla dentro del contenido no sustituye la fundamentación bibliográfica.
+
+11. Resultado esperado
+Al finalizar el proyecto, cada equipo deberá contar con una infraestructura de red funcional e integrada, donde Windows Server administre la identidad y autenticación centralizada mediante Active Directory, un cliente Windows utilice los recursos del dominio y un servidor Linux se encuentre integrado al mismo dominio, proporcionando tres servicios de red operativos.
+
+El proyecto deberá evidenciar no solamente la capacidad de instalar y configurar sistemas operativos, sino también las competencias necesarias para diseñar, integrar, administrar, documentar y evaluar una infraestructura de servicios de red en un entorno profesional.
+
+Entrega final: Informe técnico académico en PDF y demostración práctica obligatoria de la infraestructura implementada.

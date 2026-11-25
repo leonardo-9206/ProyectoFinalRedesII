@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto Final Redes 2 — SRV-LINUX01</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f0f4f8;
+      color: #1e293b;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+      overflow: hidden;
+    }
+    .header {
+      background: #0f4c81;
+      color: #ffffff;
+      padding: 28px 32px;
+    }
+    .header h1 {
+      font-size: 1.65rem;
+      margin-bottom: 6px;
+    }
+    .header p {
+      font-size: 0.95rem;
+      opacity: 0.9;
+    }
+    .content {
+      padding: 28px 32px;
+    }
+    .badge {
+      display: inline-block;
+      background: #dcfce7;
+      color: #166534;
+      font-weight: bold;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin: 20px 0 24px 0;
+    }
+    .box {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 14px 16px;
+    }
+    .box-label {
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      color: #64748b;
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    .box-value {
+      font-size: 0.98rem;
+      font-weight: bold;
+      color: #0f172a;
+    }
+    h2 {
+      font-size: 1.1rem;
+      color: #0f4c81;
+      margin: 20px 0 10px 0;
+      border-bottom: 1px solid #e2e8f0;
+      padding-bottom: 6px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+    li {
+      margin-bottom: 6px;
+    }
+    .footer {
+      background: #f8fafc;
+      border-top: 1px solid #e2e8f0;
+      padding: 16px 32px;
+      font-size: 0.85rem;
+      color: #475569;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Infraestructura Integrada Active Directory + Linux</h1>
+      <p>Proyecto Final — Administración de Sistemas / Redes 2 (UAA)</p>
+    </div>
+
+    <div class="content">
+      <p>
+        <strong>Estado del Servicio Web (Nginx):</strong>
+        <span class="badge">OPERATIVO</span>
+      </p>
+
+      <div class="grid">
+        <div class="box">
+          <div class="box-label">Servidor Web</div>
+          <div class="box-value">srv-linux01.redes2.local</div>
+        </div>
+        <div class="box">
+          <div class="box-label">Dirección IP (Red Interna)</div>
+          <div class="box-value">192.168.50.30 / 24</div>
+        </div>
+        <div class="box">
+          <div class="box-label">Dominio Active Directory</div>
+          <div class="box-value">redes2.local (REDES2)</div>
+        </div>
+        <div class="box">
+          <div class="box-label">Controlador de Dominio</div>
+          <div class="box-value">dc01.redes2.local (192.168.50.10)</div>
+        </div>
+      </div>
+
+      <h2>Servicios Activos en SRV-LINUX01</h2>
+      <ul>
+        <li><strong>Nginx (HTTP — Puerto 80):</strong> Publicación de portal web interno resuelto por DNS del dominio.</li>
+        <li><strong>Samba (SMB/CIFS — Puertos 139/445):</strong> Recurso compartido <code>\\srv-linux01.redes2.local\compartido</code> integrado con Active Directory.</li>
+        <li><strong>vsftpd (FTP — Puerto 21):</strong> Transferencia de archivos autenticada con cuentas de Active Directory vía PAM/SSSD.</li>
+        <li><strong>OpenSSH + SSSD/realmd (Puerto 22):</strong> Autenticación centralizada Kerberos con control de acceso por grupos de AD.</li>
+      </ul>
+
+      <h2>Integrantes del Equipo</h2>
+      <ul>
+        <li><strong>Joao</strong> — Windows Server &amp; Active Directory (<code>DC01</code>)</li>
+        <li><strong>Joshua</strong> — Cliente Windows, GPO &amp; Escritorio Remoto (<code>WIN-CLI01</code>)</li>
+        <li><strong>Rodrigo</strong> — Integración de Linux al Dominio AD (<code>SRV-LINUX01</code>)</li>
+        <li><strong>Leonardo</strong> — Servicios de Red en Linux: Nginx, Samba y vsftpd (<code>SRV-LINUX01</code>)</li>
+        <li><strong>Antonio</strong> — Arquitectura de Red, Pruebas End-to-End y Documentación</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      Red interna aislada <code>intnet-redes2</code> &middot; Interoperabilidad Windows Server + Windows Cliente + Ubuntu Server
+    </div>
+  </div>
+</body>
+</html>
