@@ -12,7 +12,8 @@
 ## Estado General del Módulo
 
 - [x] **Fase 0 — Preparación previa:** Archivos de configuración base (`index.html`, `smb.conf`, `vsftpd.conf`) preparados en `configs/04-linux-servicios/` y cliente `ssh` verificado en Windows host.
-- [ ] **Acceso remoto:** Tailscale instalado en host + conexión SSH probada hacia `SRV-LINUX01` en la Laptop Maestra.
+- [x] **Tailscale en host:** Instalado e iniciado en la laptop física de Leo *(pendiente únicamente recibir la IP Tailscale de la Laptop Maestra y probar SSH hacia `SRV-LINUX01`)*.
+- [x] **Aporte teórico (APA 7):** Borrador formal redactado en `bitacoras/04-leo-aporte-teorico-apa7.md` listo para entregar a Antonio *(sujeto a ajustes si cambia alguna configuración durante la implementación)*.
 - [ ] **Servicio 1 — Nginx:** Instalado, configurado, probado desde `WIN-CLI01` y capturado.
 - [ ] **Servicio 2 — Samba:** Instalado, integrado con AD, probado desde `WIN-CLI01` y capturado.
 - [ ] **Servicio 3 — vsftpd:** Instalado, autenticado con AD (PAM/SSSD), probado desde `WIN-CLI01` y capturado.
