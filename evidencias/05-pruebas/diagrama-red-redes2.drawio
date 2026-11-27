@@ -1,0 +1,34 @@
+<mxfile host="app.diagrams.net" modified="2026-11-26T23:40:00.000Z" agent="Antigravity" version="24.0.0" type="device">
+  <diagram id="redes2-arch" name="Arquitectura redes2.local">
+    <mxGraphModel dx="1100" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Arquitectura de Red — Dominio redes2.local (192.168.50.0/24)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontStyle=1;fontColor=#1A202C;" vertex="1" parent="1">
+          <mxGeometry x="220" y="30" width="660" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="intnet" value="Red Interna VirtualBox: intnet-redes2 (192.168.50.0/24 | Máscara 255.255.255.0) — Operación 100% Offline" style="rounded=1;whiteSpace=wrap;html=1;verticalAlign=top;fillColor=#F0F4F8;strokeColor=#2B6CB0;strokeWidth=2;dashed=1;fontSize=13;fontStyle=1;fontColor=#2B6CB0;spacingTop=10;" vertex="1" parent="1">
+          <mxGeometry x="80" y="90" width="940" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="dc01" value="&lt;b&gt;DC01 (Controlador de Dominio)&lt;/b&gt;&lt;br&gt;dc01.redes2.local&lt;br&gt;Windows Server 2022&lt;br&gt;&lt;b&gt;IP:&lt;/b&gt; 192.168.50.10&lt;br&gt;&lt;b&gt;DNS:&lt;/b&gt; 127.0.0.1 / 192.168.50.10&lt;br&gt;&lt;hr&gt;Roles: AD DS + DNS + KDC&lt;br&gt;OUs: TI, Desarrollo, Administracion, Equipos" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EBF8FF;strokeColor=#2B6CB0;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="410" y="150" width="280" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="wincli" value="&lt;b&gt;WIN-CLI01 (Cliente Windows)&lt;/b&gt;&lt;br&gt;win-cli01.redes2.local&lt;br&gt;Windows 10/11 Pro/Enterprise&lt;br&gt;&lt;b&gt;IP:&lt;/b&gt; 192.168.50.20&lt;br&gt;&lt;b&gt;DNS:&lt;/b&gt; 192.168.50.10&lt;br&gt;&lt;hr&gt;Servicios: GPO (GPO_Restriccion_Admin) + RDP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E6FFFA;strokeColor=#2C7A7B;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="130" y="380" width="290" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="linux" value="&lt;b&gt;SRV-LINUX01 (Servidor Linux)&lt;/b&gt;&lt;br&gt;srv-linux01.redes2.local&lt;br&gt;Ubuntu Server 22.04 / 24.04 LTS&lt;br&gt;&lt;b&gt;IP:&lt;/b&gt; 192.168.50.30&lt;br&gt;&lt;b&gt;DNS:&lt;/b&gt; 192.168.50.10&lt;br&gt;&lt;hr&gt;AD: realmd + sssd + Kerberos + realm permit&lt;br&gt;Servicios: Nginx (80), Samba (445), vsftpd (21)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF5F5;strokeColor=#C53030;strokeWidth=2;fontSize=12;align=center;" vertex="1" parent="1">
+          <mxGeometry x="660" y="380" width="310" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" value="DNS / Kerberos / GPO" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#2B6CB0;strokeWidth=2;fontSize=11;" edge="1" parent="1" source="wincli" target="dc01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="DNS / Kerberos / SSSD" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#2B6CB0;strokeWidth=2;fontSize=11;" edge="1" parent="1" source="linux" target="dc01">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="HTTP (80) / SMB (445) / FTP (21) / SSH (22)" style="endArrow=classic;startArrow=classic;html=1;strokeColor=#2D3748;strokeWidth=2;fontSize=11;" edge="1" parent="1" source="wincli" target="linux">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
